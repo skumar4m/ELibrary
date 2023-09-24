@@ -1,0 +1,21 @@
+.add-book {
+    margin: auto;
+    margin-top: 10px;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+div {
+    padding: 5px;
+}
+
+.book-added {
+    color: green;
+}

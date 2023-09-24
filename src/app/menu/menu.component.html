@@ -1,0 +1,29 @@
+<div class="topnav container-fluid">
+    <div class="row">
+        <div class="col">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/rules">Rules</a>
+            <a routerLink="/pricing">Pricing</a>
+            <a routerLink="/about">About</a>
+        
+            <div *ngIf="GetLogin()">
+                <a routerLink="/search-book">Search Book</a>
+                <a routerLink="/add-book">Add Book</a>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <div *ngIf="!GetLogin()">
+                <a routerLink="/signup">SignUp</a>
+                <a routerLink="/login">Login</a>  
+            </div>
+        
+            <div *ngIf="GetLogin()">
+                <a routerLink="" (click)="SetLogOut()">Logout</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

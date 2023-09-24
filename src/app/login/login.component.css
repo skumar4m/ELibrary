@@ -1,0 +1,26 @@
+.invalid-login {
+    color: red;
+    font-size: medium;
+}
+
+.login {
+    margin: auto;
+    margin-top: 10px;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 10px;
+}
+
+.right {
+    float: right;
+}
+
+div {
+    padding: 5px;
+}
+
+.center {
+    text-align: center;
+}

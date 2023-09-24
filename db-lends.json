@@ -1,0 +1,22 @@
+{
+  "lends": [
+    {
+      "userId": 1,
+      "bookId": 2,
+      "issueDate": "2023-09-05T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "bookId": 6,
+      "issueDate": "2023-09-08T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "bookId": 4,
+      "issueDate": "2023-09-15T18:30:00.000Z",
+      "id": 4
+    }
+  ]
+}

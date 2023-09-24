@@ -1,0 +1,31 @@
+.table-books {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .rw {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  div {
+    padding: 5px;
+  }
+
+  button {
+    margin: 5px;
+  }
+
+  h3 {
+    padding: 3px;
+  }
+
+  .center {
+    text-align: center;
+    vertical-align: middle;
+  }

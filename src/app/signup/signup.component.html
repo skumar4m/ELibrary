@@ -1,0 +1,38 @@
+<div class="signup">
+    <form [formGroup]="myForm" (ngSubmit)="registerUser(myForm)" *ngIf="!userAdded">
+        <h3 class="center">Sign Up</h3>
+        <hr>
+        <div>
+            <label for="firstName">First name</label>
+            <input type="text" formControlName="firstName" class="form-control" required>
+        </div>
+    
+        <div>
+            <label for="lastName">Last name</label>
+            <input type="text" formControlName="lastName" class="form-control" required>
+        </div>
+    
+        <div>
+            <label for="email">Email</label>
+            <input type="text" formControlName="email" class="form-control" required>
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            <input type="text" formControlName="password" class="form-control" required>
+        </div>
+      
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<div class="user-added" *ngIf="userAdded">
+    <p>
+        User added sucessfully!
+    </p>
+    <a routerLink="/login"><button>Login</button></a>
+</div>
+

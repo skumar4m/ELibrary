@@ -1,0 +1,14 @@
+.homeImage {
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url('../../assets/images/home.webp');
+}
+
+.title {
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Selva",
+      "lastName": "kumar",
+      "email": "selva@yahoo.com",
+      "password": "1234"
+    },
+    {
+      "firstName": "Nibhish",
+      "lastName": "harshan",
+      "email": "nibhish@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "firstName": "Vidhya",
+      "lastName": "harsini",
+      "email": "vidhya@yahoo.com",
+      "password": "vidya123",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "firstName": "admin",
+      "lastName": "",
+      "email": "admin@elibrary.com",
+      "password": "admin123",
+      "admin": true
+    },
+    {
+      "id": 5,
+      "firstName": "test",
+      "lastName": "",
+      "email": "test@test.com",
+      "password": "123",
+      "admin": false
+    }
+  ]
+}

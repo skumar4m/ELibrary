@@ -1,0 +1,62 @@
+<h3 style="text-align: center;">Search books</h3>
+<hr>
+<form [formGroup]="myForm" (ngSubmit)="searchBooks(myForm)">
+    <table style="border: none;">
+        <tr>
+            <td width="25%" style="padding: 3px;">
+                <label for="title">Book Name</label>
+                <input type="text" formControlName="title" class="form-control">
+            </td>
+            <td width="20%" style="padding: 3px;">
+                <label for="author">Author</label>
+                <input type="text" formControlName="author" class="form-control">
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <div>
+        <button (click)="ClearAndSearch(myForm)" class="btn btn-secondary">Clear</button>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+<table class="table-books" *ngIf="books.length>0; else notFound" >
+    <tr>
+        <th class="rw">Image</th>
+        <th class="rw">Book Name</th>
+        <th class="rw">Description</th>
+        <th class="rw">Author</th>
+        <th class="rw">No.of.Books</th>
+        <th *ngIf="!this.userAdmn" class="rw">Purchase</th>
+        <th *ngIf="this.userAdmn" class="rw">Edit</th>
+    </tr>
+    <tr *ngFor="let book of books">
+        <td class="rw"><img [src]="imagePath + book.imageUrl" width="100"></td>
+        <td class="rw">{{book.title}}</td>
+        <td class="rw">{{book.description}}</td>
+        <td class="rw">{{book.author}}</td>
+        <td class="rw">{{book.books_count}}</td>
+        <div *ngIf="!this.userAdmn; else adminUser">
+            <div *ngIf="this.book.lended; else notLended">
+                <td class="center">Purchased</td>
+            </div>
+            <ng-template #notLended>
+                <td class="center"><button type="button" class="btn btn-success" (click)="RegisterLend(book.id)">Purchase</button> </td>
+            </ng-template>
+        </div>
+        <ng-template #adminUser>
+            <td class="rw"><a routerLink="/edit-book" [queryParams]="{id: book.id}" class="btn btn-success">Edit</a> </td>
+        </ng-template>
+
+    </tr>
+</table>
+
+<ng-template #notFound>
+    <table class="table-books">
+        <tr>
+            <td class="rw">No books found</td>
+        </tr>
+    </table>
+</ng-template>
+
+

@@ -1,0 +1,68 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Believe in Yourself",
+      "description": "Believe in Yourself by Joseph Murphy on 2016",
+      "author": "Joseph Murphy",
+      "imageUrl": "believe-in-yourself.webp",
+      "books_count": 10
+    },
+    {
+      "id": 2,
+      "title": "Sudoku fur Dummies",
+      "description": "Sudoku fur Dummies by Heron Andrew on 2012",
+      "author": "Heron Andrew",
+      "imageUrl": "sudoku-fur-dummies.webp",
+      "books_count": "4"
+    },
+    {
+      "title": "Coco - The Official Cookbook",
+      "description": "The Official Cookbook by Editions Gino on 2018",
+      "author": "Editions Gino",
+      "imageUrl": "coco-the-official-cookbook.webp",
+      "books_count": "3",
+      "id": 4
+    },
+    {
+      "title": "You Can",
+      "description": "Do you often wonder whether you really have it in you to accomplish your goals, to win over obstacles, and to succeed in life? Through the empowering self-help manual You Can, penned to promote personal growth and well-being for anyone who reads it, George Matthew Adams talks about things to be done to pave your way to a fulfilling, successful life.",
+      "author": "Adams George Matthew",
+      "imageUrl": "you-can.webp",
+      "books_count": "5",
+      "id": 5
+    },
+    {
+      "title": "Science Quiz Book",
+      "description": "Basic aim of this book is to help school students of secondary or higher secondary schools (Xth or XIIth). The idea is to create their interests in science and to present difficult scientific topics in interesting and easy to understand manner.",
+      "author": "Garg Rajeev",
+      "imageUrl": "science-quiz-book.webp",
+      "books_count": "6",
+      "id": 6
+    },
+    {
+      "title": "108 Fairy Tales",
+      "description": "This enchanting book comprising some fabulous 108 Fairy Tales has been exclusively designed to cater to the dynamic imagination of young readers. ",
+      "author": "Maple",
+      "imageUrl": "108-fairy-tales.webp",
+      "books_count": "4",
+      "id": 7
+    },
+    {
+      "title": "101 Bedtime Stories",
+      "description": "Bedtime stories have long been known to support parent-child bonds and prepare children for sleep. Reading these stories over and over again helps children relax their mind and body and nourish a positive effect at bedtime.",
+      "author": "Dreamland",
+      "imageUrl": "101-bedtime-stories.webp",
+      "books_count": "3",
+      "id": 8
+    },
+    {
+      "title": "101 Panchatantra Stories",
+      "description": "Passed from generation to generation, Panchatantra Stories are the oldest surviving popular collection of stories. These stories come with moral messages which give children an early footing on moral and social values.",
+      "author": "Dreamland",
+      "imageUrl": "101-panchatantra-stories.webp",
+      "books_count": "8",
+      "id": 9
+    }
+  ]
+}
